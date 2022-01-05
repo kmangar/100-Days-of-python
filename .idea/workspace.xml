@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbbbe8b-58cb-4d29-ac23-6c07824bd3b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day2/day 2.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2/day2.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2/day2.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RunManager" selected="Python.day 2.2">
     <configuration name="brandNameGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -101,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641322064303</updated>
       <workItem from="1641322065732" duration="3017000" />
-      <workItem from="1641390553128" duration="2647000" />
+      <workItem from="1641390553128" duration="3969000" />
     </task>
     <servers />
   </component>
@@ -113,22 +111,26 @@
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
     <state x="2054" y="554" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641324984282" />
-    <state width="975" height="572" key="GridCell.Tab.0.bottom" timestamp="1641393929606">
+    <state width="975" height="572" key="GridCell.Tab.0.bottom" timestamp="1641395729244">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="572" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641393929606" />
-    <state width="975" height="572" key="GridCell.Tab.0.center" timestamp="1641393929605">
+    <state width="975" height="572" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641395729244" />
+    <state width="975" height="572" key="GridCell.Tab.0.center" timestamp="1641395729243">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="572" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641393929605" />
-    <state width="975" height="572" key="GridCell.Tab.0.left" timestamp="1641393929605">
+    <state width="975" height="572" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641395729243" />
+    <state width="975" height="572" key="GridCell.Tab.0.left" timestamp="1641395729243">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="572" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641393929605" />
-    <state width="975" height="572" key="GridCell.Tab.0.right" timestamp="1641393929606">
+    <state width="975" height="572" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641395729243" />
+    <state width="975" height="572" key="GridCell.Tab.0.right" timestamp="1641395729243">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="572" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641393929606" />
+    <state width="975" height="572" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641395729243" />
+    <state x="1930" y="602" key="SettingsEditor" timestamp="1641394876109">
+      <screen x="1920" y="0" width="1018" height="1920" />
+    </state>
+    <state x="1930" y="602" key="SettingsEditor/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641394876109" />
     <state x="2125" y="784" key="com.intellij.ide.util.TipDialog" timestamp="1641390577511">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
@@ -137,10 +139,10 @@
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
     <state x="2238" y="877" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641324976500" />
-    <state x="2092" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1641391620512">
+    <state x="2092" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1641394832781">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state x="2092" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641391620512" />
+    <state x="2092" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641394832781" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/code$brandNameGenerator.coverage" NAME="brandNameGenerator Coverage Results" MODIFIED="1641393923502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day1" />
