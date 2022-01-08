@@ -8,11 +8,15 @@ print(student_scores)
 # defined a variable and assign it to the first value in the list and use the for loop to check for any
 # value greater or equal to the assigned variable
 highest_value = student_scores[0]
-
+# max function
 for x in student_scores:
     if x >= highest_value:
         highest_value = x
 print(f"The highest score in the class is: {highest_value}")
 
-
+# min function
+for x in student_scores:
+    if x < highest_value:
+        highest_value = x
+print(f"The highest score in the class is: {highest_value}")
 
