@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbbbe8b-58cb-4d29-ac23-6c07824bd3b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day5/day5.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/day5.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/day5.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/day5.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/day5.3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Python.day5.1">
+  <component name="RunManager" selected="Python.day5.3">
     <configuration name="4.3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,28 +49,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/4.3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="day4.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/day4.1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,6 +101,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="day5.3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day5/day5.3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="rockPaperScissor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day5.3" />
         <item itemvalue="Python.day5.1" />
         <item itemvalue="Python.rockPaperScissor" />
         <item itemvalue="Python.4.3" />
         <item itemvalue="Python.day4.2" />
-        <item itemvalue="Python.day4.1" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +170,7 @@
       <updated>1641322064303</updated>
       <workItem from="1641322065732" duration="3017000" />
       <workItem from="1641390553128" duration="25574000" />
-      <workItem from="1641610614612" duration="3803000" />
+      <workItem from="1641610614612" duration="4410000" />
     </task>
     <servers />
   </component>
@@ -183,22 +182,22 @@
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
     <state x="2054" y="554" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641324984282" />
-    <state width="975" height="845" key="GridCell.Tab.0.bottom" timestamp="1641661650200">
+    <state width="975" height="845" key="GridCell.Tab.0.bottom" timestamp="1641663911231">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="845" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641661650200" />
-    <state width="975" height="845" key="GridCell.Tab.0.center" timestamp="1641661650200">
+    <state width="975" height="845" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641663911231" />
+    <state width="975" height="845" key="GridCell.Tab.0.center" timestamp="1641663911231">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="845" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641661650200" />
-    <state width="975" height="845" key="GridCell.Tab.0.left" timestamp="1641661650199">
+    <state width="975" height="845" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641663911231" />
+    <state width="975" height="845" key="GridCell.Tab.0.left" timestamp="1641663911231">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="845" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641661650199" />
-    <state width="975" height="845" key="GridCell.Tab.0.right" timestamp="1641661650200">
+    <state width="975" height="845" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641663911231" />
+    <state width="975" height="845" key="GridCell.Tab.0.right" timestamp="1641663911231">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
-    <state width="975" height="845" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641661650200" />
+    <state width="975" height="845" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1018.1920@1920.0.1018.1920" timestamp="1641663911231" />
     <state x="1930" y="602" key="SettingsEditor" timestamp="1641394876109">
       <screen x="1920" y="0" width="1018" height="1920" />
     </state>
@@ -224,6 +223,7 @@
     <SUITE FILE_PATH="coverage/code$brandNameGenerator.coverage" NAME="brandNameGenerator Coverage Results" MODIFIED="1641393923502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day1" />
     <SUITE FILE_PATH="coverage/code$day3_5.coverage" NAME="day3.5 Coverage Results" MODIFIED="1641500645925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day3" />
     <SUITE FILE_PATH="coverage/code$rockPaperScissor.coverage" NAME="rockPaperScissor Coverage Results" MODIFIED="1641661540419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
+    <SUITE FILE_PATH="coverage/code$day5_3.coverage" NAME="day5.3 Coverage Results" MODIFIED="1641663911223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day5" />
     <SUITE FILE_PATH="coverage/code$day_2_2.coverage" NAME="day 2.2 Coverage Results" MODIFIED="1641393929599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day2" />
     <SUITE FILE_PATH="coverage/code$day4_2.coverage" NAME="day4.2 Coverage Results" MODIFIED="1641594054867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
     <SUITE FILE_PATH="coverage/code$TresureIsland.coverage" NAME="TresureIsland Coverage Results" MODIFIED="1641503768408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day3" />
