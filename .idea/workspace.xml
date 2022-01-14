@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbbbe8b-58cb-4d29-ac23-6c07824bd3b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day8/paintAreaCalculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day8/primeNumberChecker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +201,7 @@
       <workItem from="1641919961714" duration="597000" />
       <workItem from="1641921034963" duration="628000" />
       <workItem from="1641941045930" duration="1798000" />
-      <workItem from="1642092942853" duration="10282000" />
+      <workItem from="1642092942853" duration="11592000" />
     </task>
     <servers />
   </component>
