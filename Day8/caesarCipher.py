@@ -47,10 +47,10 @@ elif direction == "decode":
 
 def caesar(start_text, shift_amount, direction_togo):
     end_text = ""
+    if direction_togo == "decode":
+        shift_amount *= -1
     for letter in start_text:
         position = alphabet.index(letter)
-        if direction_togo == "decode":
-            shift_amount *= -1
         new_position = position + shift_amount
         # end_text += alphabet[alphabet.index(letter) + shift_amount]
         end_text += alphabet[new_position]
