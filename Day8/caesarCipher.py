@@ -45,16 +45,16 @@ elif direction == "decode":
 
 # TODO-1: Combine the encrypt() and decrypt() functions into a single function called caesar().
 
-def caesar(plain_text, shift_amount, direction_togo):
-    cipher_text = ""
-    if direction_togo == "encode":
-        for x in plain_text:
-            cipher_text += alphabet[alphabet.index(x) + shift_amount]
-        print(f"The encoded text is {cipher_text}")
-    elif direction_togo == "decode":
-        for x in plain_text:
-            cipher_text += alphabet[alphabet.index(x) - shift_amount]
-        print(f"The decoded text is {cipher_text}")
+def caesar(start_text, shift_amount, direction_togo):
+    end_text = ""
+    for letter in start_text:
+        position = alphabet.index(letter)
+        if direction_togo == "decode":
+            shift_amount *= -1
+        new_position = position + shift_amount
+        # end_text += alphabet[alphabet.index(letter) + shift_amount]
+        end_text += alphabet[new_position]
+    print(f"The encoded text is {end_text}")
 
 
 # TODO-2: Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
