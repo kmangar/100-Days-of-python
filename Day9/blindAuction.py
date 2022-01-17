@@ -17,14 +17,16 @@ def who_won():
     winning_bid = max(values)
     position = values.index(winning_bid)
     winner = bidder[position]
-    print(f"The winner is {winner} with a bid of {winning_bid}")
+    print(f"The winner is {winner} with a bid of ${winning_bid}")
 
 
 while auction_start:
 
     name = input("what is your name?: ")
-    bid = int(input("What's your bid?: "))
-    add_person(name, bid)
+    bid = int(input("What's your bid?: $"))
+    # add_person(name, bid)
+
+    auction[name] = bid
 
     more_people = input("Are there any other bidders? Type 'yes' or 'no. \n").lower()
     if more_people == "no":
