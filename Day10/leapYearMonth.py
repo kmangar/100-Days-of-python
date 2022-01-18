@@ -13,13 +13,12 @@ def is_leap(year):
 
 def days_in_month(year_passed, month_left):
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    if is_leap(year_passed) == False:
-        return (month_days[month_left - 1])
-    elif is_leap(year_passed) == True:
-        month_days[1] = 29
-        return (month_days[month_left - 1])
+    if month > 12 or month < 1:
+        return "Invalid month"
+    elif is_leap(year_passed):
+        return 29
     else:
-        return "Try Agian"
+        return month_days[month_left-1]
 
 
 # 🚨 Do NOT change any of the code below
@@ -27,7 +26,6 @@ year = int(input("Enter a year: "))
 month = int(input("Enter a month: "))
 days = days_in_month(year, month)
 print(days)
-
 
 
 
