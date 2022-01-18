@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbbbe8b-58cb-4d29-ac23-6c07824bd3b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day10/leapYearMonth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day10/leapYearMonth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Python.leapYearMonth">
+  <component name="RunManager" selected="Python.calculator">
     <configuration name="blindAuction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="caesarCipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,12 +91,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day8/caesarCipher.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day10/calculator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.calculator" />
         <item itemvalue="Python.leapYearMonth" />
         <item itemvalue="Python.blindAuction" />
         <item itemvalue="Python.travelLog" />
         <item itemvalue="Python.studentGradeEvaluator" />
-        <item itemvalue="Python.caesarCipher" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +202,7 @@
       <workItem from="1641921034963" duration="628000" />
       <workItem from="1641941045930" duration="1798000" />
       <workItem from="1642092942853" duration="23124000" />
-      <workItem from="1642297436884" duration="8901000" />
+      <workItem from="1642297436884" duration="10704000" />
     </task>
     <servers />
   </component>
@@ -230,6 +231,7 @@
     <SUITE FILE_PATH="coverage/code$challenge3.coverage" NAME="challenge3 Coverage Results" MODIFIED="1642098799534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day7" />
     <SUITE FILE_PATH="coverage/code$challenge4.coverage" NAME="challenge4 Coverage Results" MODIFIED="1642100754493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day7" />
     <SUITE FILE_PATH="coverage/code$rockPaperScissor.coverage" NAME="rockPaperScissor Coverage Results" MODIFIED="1641661540419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
+    <SUITE FILE_PATH="coverage/code$calculator.coverage" NAME="calculator Coverage Results" MODIFIED="1642523734838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day10" />
     <SUITE FILE_PATH="coverage/code$day4_1.coverage" NAME="day4.1 Coverage Results" MODIFIED="1641591848414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
     <SUITE FILE_PATH="coverage/code$travelLog.coverage" NAME="travelLog Coverage Results" MODIFIED="1642389485476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day9" />
   </component>
