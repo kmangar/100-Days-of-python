@@ -12,7 +12,7 @@
 # else:
 #     print("Not leap year.")
 
-# debugged code: The input was not concatenated
+# debugged code: The input was not string and needed to be converted to int 
 year = int(input("Which year do you want to check?"))
 
 if year % 4 == 0:
