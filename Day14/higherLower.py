@@ -10,9 +10,8 @@ def random_model():
 
 
 # make a function that compares the two insta model and checks who has more follower and returns the one with the most
-
-def higher_lower(model_A, model_B):
-    if model_A['follower_count'] > model_B['follower_count']:
+def higher_lower(model_a, model_b):
+    if model_a['follower_count'] >= model_b['follower_count']:
         return 'a'
     else:
         return 'b'
@@ -40,7 +39,6 @@ while True:
     if model == model2:
         model2 = random_model()
 
-    b = model2
     print(f"Compare B: {model2['name']}, a {model2['description']}, from {model2['country']}")
 
     # ask user for who has more follower between the two
