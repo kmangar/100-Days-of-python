@@ -48,14 +48,19 @@ active = True
 
 
 def coffee():
-    global money
+    global money, active
     while active:
 
         request = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
+
+        if request == 'off':
+            active = False
+            exit(0)
+
         # TODO: 1: print Report
-        if request == 'report':
-            print(f"Water: {resources['water']}\nMilk: {resources['milk']}\nCoffee: {resources['coffee']}\nMoney: ${money}")
+        elif request == 'report':
+            print(f"Water: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g\nMoney: ${money}")
             coffee()
 
         drink = MENU[request]['ingredients']
@@ -92,9 +97,6 @@ def coffee():
                 resources['water'] -= drink['water']
                 resources['milk'] -= drink['milk']
                 resources['coffee'] -= drink['coffee']
-
-
-
 
 
 coffee()
