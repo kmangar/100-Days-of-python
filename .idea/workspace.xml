@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbbbe8b-58cb-4d29-ac23-6c07824bd3b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day15/art.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day15/coffeMachine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day14/higherLower.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day14/higherLower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/coffeMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day15/coffeMachine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1641941045930" duration="1798000" />
       <workItem from="1642092942853" duration="23124000" />
       <workItem from="1642297436884" duration="44428000" />
-      <workItem from="1643061287536" duration="3163000" />
+      <workItem from="1643061287536" duration="7841000" />
     </task>
     <servers />
   </component>
@@ -241,7 +239,7 @@
     <SUITE FILE_PATH="coverage/code$challenge_5.coverage" NAME="challenge 5 Coverage Results" MODIFIED="1642116999648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day7" />
     <SUITE FILE_PATH="coverage/code$challenge4.coverage" NAME="challenge4 Coverage Results" MODIFIED="1642100754493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day7" />
     <SUITE FILE_PATH="coverage/code$rockPaperScissor.coverage" NAME="rockPaperScissor Coverage Results" MODIFIED="1641661540419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
-    <SUITE FILE_PATH="coverage/code$coffeMachine.coverage" NAME="coffeMachine Coverage Results" MODIFIED="1643064733789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
+    <SUITE FILE_PATH="coverage/code$coffeMachine.coverage" NAME="coffeMachine Coverage Results" MODIFIED="1643079842636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day15" />
     <SUITE FILE_PATH="coverage/code$day4_1.coverage" NAME="day4.1 Coverage Results" MODIFIED="1641591848414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day4" />
   </component>
 </project>
