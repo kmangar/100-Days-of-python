@@ -33,13 +33,9 @@ resources = {
     "coffee": 100,
 }
 
-def check_drink(a_drink, menu_drink):
-    if a_drink['water'] > menu_drink['water']:
-        return "Sorry there is not enough water."
-    elif a_drink['milk'] > menu_drink['milk']:
-        return "Sorry there is not enough milk."
-    elif a_drink['coffee'] > menu_drink['coffee']:
-        return "Sorry there is not enough coffee."
+
+def coins_cal(quarters, dimes, nickles, pennies):
+    return (0.25*quarters)+(dimes*.10)+(nickles*.5)+(.01* pennies)
 
 
 print(logo)
@@ -48,21 +44,57 @@ money = 0
 
 active = True
 
-print(MENU['latte'])
+# print(resources)
 
-while active:
 
-    request = input("What would you like? (espresso/latte/cappuccino): ").lower()
+def coffee():
+    global money
+    while active:
 
-    # TODO: 1: print Report
-    if request == 'report':
-        print(f"Water: {resources['water']}\nMilk: {resources['milk']}\nCoffee: {resources['coffee']}\nMoney: ${money}")
+        request = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
-    # TODO: 2: Check resources sufficient
-    else:
-        drink = MENU(request)
+        # TODO: 1: print Report
+        if request == 'report':
+            print(f"Water: {resources['water']}\nMilk: {resources['milk']}\nCoffee: {resources['coffee']}\nMoney: ${money}")
+            coffee()
 
-        print(drink)
+        drink = MENU[request]['ingredients']
 
-        check_drink(drink, resources)
+        # TODO: 2: Check resources sufficient
+        if drink['water'] > resources['water']:
+             print("Sorry there is not enough water.")
+             coffee()
+        elif drink['milk'] > resources['milk']:
+            print("Sorry there is not enough milk.")
+            coffee()
+        elif drink['coffee'] > resources['coffee']:
+            print("Sorry there is not enough coffee.")
+            coffee()
+        else:
+            print("Please insert coins.")
+            quarter = int(input("How many quarter?: "))
+            dime = int(input("How many dime?: "))
+            nickle = int(input("How many nickle?: "))
+            pennie = int(input("How many penny?: "))
 
+            cash = coins_cal(quarter, dime, nickle, pennie)
+
+            cost = MENU[request]['cost']
+
+            if cost > cash:
+                print("Sorry that's not enough money. Money refunded.")
+                coffee()
+            else:
+                change = cash - cost
+                print(f"Here is ${change} in change.")
+                print(f"Here is you {request} Enjoy!")
+                money += cost
+                resources['water'] -= drink['water']
+                resources['milk'] -= drink['milk']
+                resources['coffee'] -= drink['coffee']
+
+
+
+
+
+coffee()
