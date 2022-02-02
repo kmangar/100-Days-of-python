@@ -17,7 +17,6 @@ class Snake:
 
     # CREATES A SNAKE INSTANCE AND PUTS IT IN SCREEN
     def create_snake(self):
-
         for position in STARTING_POS:
             self.add_segment(position)
 
@@ -59,3 +58,10 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
