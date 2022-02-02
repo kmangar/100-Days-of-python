@@ -10,11 +10,11 @@ screen.tracer(0)
 
 player = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen()
-screen.onkey(player.move, "w")
-screen.onkey(player.move, "Up")
-
+screen.onkeypress(player.move, "w")
+screen.onkeypress(player.move, "Up")
 
 game_is_on = True
 while game_is_on:
@@ -23,8 +23,19 @@ while game_is_on:
 
     # When the turtle hits the top edge of the screen,
     # it moves back to the original position and the player levels up. On the next level, the car speed increases.
-    if player.ycor() == 280:
+    if player.ycor() == player.finishLine:
         player.respawn()
+        car_manager.speed_up()
+        scoreboard.levelUp()
+        car_manager.add_cars()
 
     car_manager.new_car()
     car_manager.car_move()
+
+    for car in car_manager.all_car:
+        if player.distance(car) < 20:
+            game_is_on = False
+    print(len(car_manager.all_car))
+    
+print(len(car_manager.all_car))
+screen.exitonclick()
