@@ -10,7 +10,7 @@ class Score(Turtle):
         self.hideturtle()
         self.score = 0
         with open("highscore.txt") as file:
-            self.high_score = int(float(file.read()))
+            self.high_score = int(file.read())
 
         self.penup()
         self.color("white")
