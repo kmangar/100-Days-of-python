@@ -16,6 +16,7 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
         self.setheading(90)
 
+    # 1. A turtle moves forwards when you press the "Up" key. It can only move forwards, not back, left or right.
     def move(self):
         if self.ycor() != 280:
             self.forward(MOVE_DISTANCE)
