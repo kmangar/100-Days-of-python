@@ -8,6 +8,7 @@ class Player(Turtle):
 
     def __init__(self):
         super().__init__()
+        self.finishLine = FINISH_LINE_Y
         self.respawn()
 
     def respawn(self):
@@ -18,6 +19,6 @@ class Player(Turtle):
 
     # 1. A turtle moves forwards when you press the "Up" key. It can only move forwards, not back, left or right.
     def move(self):
-        if self.ycor() != 280:
+        if self.ycor() != FINISH_LINE_Y:
             self.forward(MOVE_DISTANCE)
 
