@@ -33,5 +33,7 @@ data_dict= {
     "Count": [len(gray_squirrel), len(black_squirrel), len(cinnamon_squirrel)]
 }
 
+# TURN THE DICT TO A DataFrame
 df = pd.DataFrame(data_dict)
+# Convert the DataFrame to a csv file
 df.to_csv("squirrel_count.csv")
