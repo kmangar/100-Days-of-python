@@ -37,10 +37,12 @@ while len(guessed_correctly) < 50:
     answer_state = screen.textinput(title=f"{len(guessed_correctly)}/50 Guess A State", prompt="Spell A State: ").title()
 
     if answer_state == "Exit":
-        states_to_learn = []
-        for state in all_states:
-            if state not in guessed_correctly:
-                states_to_learn.append(state)
+        # list comprehension 
+        states_to_learn = [state for state in all_states if state not in guessed_correctly]
+        # states_to_learn =[]
+        # for state in all_states:
+        #     if state not in guessed_correctly:
+        #         states_to_learn.append(state)
         new_data = pandas.DataFrame(states_to_learn)
         save = screen.textinput(title=f"SAVE",
                                         prompt="Do you want to save a csv file of missing states? yes or no: ")
