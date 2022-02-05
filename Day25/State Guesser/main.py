@@ -37,7 +37,7 @@ while len(guessed_correctly) < 50:
     answer_state = screen.textinput(title=f"{len(guessed_correctly)}/50 Guess A State", prompt="Spell A State: ").title()
 
     if answer_state == "Exit":
-        # list comprehension 
+        # list comprehension
         states_to_learn = [state for state in all_states if state not in guessed_correctly]
         # states_to_learn =[]
         # for state in all_states:
