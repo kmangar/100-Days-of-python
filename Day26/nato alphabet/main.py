@@ -44,7 +44,7 @@ def generate_phonetic():
         # print the list
         print(output_list)
 
-
+generate_phonetic()
 
 
 
