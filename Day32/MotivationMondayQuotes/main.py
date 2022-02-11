@@ -21,7 +21,7 @@ rn = random.choice(range(0, 101, 2))
 random_quote = f"{data[rn]}\n{data[rn + 1]}"
 
 
-if day_of_week == 3:
+if day_of_week == 0:
     print(random_quote)
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
