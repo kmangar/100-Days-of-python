@@ -8,7 +8,8 @@ import json
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 def password_gen():
-    alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split() + "a b c d e f g h i j k l m n o p q r s t u v w x y z".upper().split()
+    alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split() + "a b c d e f g h i j k l m n " \
+                                                                               "o p q r s t u v w x y z".upper().split()
     numbers = "0 1 2 3 4 5 6 7 8 9".split()
     characters = "` ~ ! @ # $ % ^ & * ( ) - _ = + | , . / < > ? ; : '  ".split()
 
@@ -65,22 +66,27 @@ def save_password():
                 password_entry.delete(0, END)
 
 
+# ---------------------------- FIND Password------------------------------- #
 def find_password():
-
-    wesite = website_entry.get()
+    website = website_entry.get()
 
     try:
         with open("data.json", mode="r") as file:
             # Read the old data and store it
             data = json.load(file)
-    except FileNotFoundError :
+    # catch if file not found
+    except FileNotFoundError:
         messagebox.showinfo(title="OOPS", message="Your password vault is empty")
         # with open("data.json", "w") as file:
         #     json.dump(data, file, indent=4)
-    except KeyError:
-        messagebox.showinfo(title="OOPS", message="No details for your website exits")
+    # catch if key doesn't exist, you can use this or the if and else in the buttom of this function
+    # except KeyError:                                                                          ⬇️
+    #     messagebox.showinfo(title="OOPS", message=f"No details for your {website} exits")     ⬇️
     else:
-        print(data[wesite]["email"])
+        if website in data:
+            messagebox.showinfo(title=website,
+                                message=f"Email: {data[website]['email']}\nPassword: {data[website]['password']}")
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 screen = Tk()
