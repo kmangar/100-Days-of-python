@@ -98,10 +98,10 @@ listbox.pack()
 
 
 # Grid and padding
-my_label = Label(text="I Am a Label", font=("Arial", 24, "bold"))
-my_label.config(text="New Text")
-my_label.grid(column=0, row=0)
-my_label.config(padx=50, pady=50)
+# my_label = Label(text="I Am a Label", font=("Arial", 24, "bold"))
+# my_label.config(text="New Text")
+# my_label.grid(column=0, row=0)
+# my_label.config(padx=50, pady=50)
 
 
 window.mainloop()
