@@ -7,7 +7,7 @@ kanye.api_address = "https://api.kanye.rest/"
 
 def get_quote():
 
-    canvas.itemconfig(quote_text, text=f"{kanye.get_quote()}")
+    canvas.itemconfig(quote_text, text=f"{kanye.get_quote()['quote']}")
 
 
 window = Tk()
