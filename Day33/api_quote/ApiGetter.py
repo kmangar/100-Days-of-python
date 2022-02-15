@@ -13,5 +13,5 @@ class ApiGetter:
 
         response.raise_for_status()
 
-        self.quote = response.json()["quote"]
+        self.quote = response.json()
         return self.quote
