@@ -112,7 +112,7 @@ email_username.grid(row=2, column=0)
 
 email_username_entry = Entry(width=35)
 email_username_entry.grid(columnspan=2, row=2, column=1, sticky="EW")
-email_username_entry.insert(0, "khammangar@gmail.com")
+email_username_entry.insert(0, "test@gmail.com")
 
 password = Label(text="Password: ", font=("Times New Roman", 12))
 password.grid(row=3, column=0)
