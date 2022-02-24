@@ -27,12 +27,14 @@ response.raise_for_status()
 weather_info = response.json()
 
 weather_today = weather_info["hourly"][:12]
+weather_alerts = weather_info["alerts"]
+alert_list = [alert["event"] for alert in weather_alerts]
 
 will_rain = False
 
 for hour_data in weather_today:
     condition_code = (hour_data["weather"][0]["id"])
-    if int(condition_code) < 600:
+    if int(condition_code) < 700:
         will_rain = True
 
 # If it will rain use twilio to sent msg
@@ -40,7 +42,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
-        body="Hello,\n\nIt's going to rain today Master. Remember to bring an ☔️ \n-🤵",
+        body=f"Hello\n\nIt's going to rain today Master. Remember to bring an ☔ \nalerts: {alert_list}️ \n-🤵",
         from_='+YOUR_TWILIO_NUMBER',
         to='+YOUR_PHONE_NUMBER'
     )
