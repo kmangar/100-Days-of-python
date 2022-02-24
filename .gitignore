@@ -475,3 +475,5 @@ pip-selfcheck.json
 *.iml
 *.xml
 Day29/data.json
+.DS_Store
+.DS_Store
