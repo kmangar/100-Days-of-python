@@ -13,7 +13,7 @@ api_key = os.environ["API_KEY"]
 latitude = 38.252666
 longitude = -85.758453
 
-# Para
+# Parameters for the Open weather API call
 parameters = {
     "lat": latitude,
     "lon": longitude,
@@ -34,8 +34,9 @@ for hour_data in weather_today:
     condition_code = (hour_data["weather"][0]["id"])
     if condition_code < 600:
         will_rain = True
-if will_rain:
 
+# If it will rain use twilio to sent msg
+if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
