@@ -8,10 +8,12 @@ hr{
     width: 5%;
     border-width: 5px;
     border-color: #545454;
-
+}
+img:hover{
+    background-color: gold;
 }
 img{
-    border: 0;
+    border-radius: 100%;
     vertical-align: middle;
 }
 h1, h3{
