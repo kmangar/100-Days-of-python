@@ -2,6 +2,8 @@ body{
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    color: #40514E;
+
 }
 
 h1{
@@ -9,7 +11,6 @@ h1{
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
     color: #66BFBF;
-    line-height: 2;
 }
 
 h2{
@@ -26,6 +27,8 @@ h3{
 
 a{
     color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .top-container{
@@ -52,14 +55,18 @@ span{
 }
 
 .middle-container{
-    padding-top: 50px;
+    margin: 100px 0;
+}
+
+.intro{
+    width: 50%;
+    margin: auto;
 }
 
 .skill-row{
     width: 60%;
     margin: 100px auto 100px auto;
     text-align: left;
-    line-height: 2;
 }
 .language_stats{
     width: 30%;
@@ -76,9 +83,10 @@ span{
     margin-right: 25px;
 }
 p{
-    color: #40514E;
+    line-height: 2;
 
 }
+
 .skill-row p{
     font-size: 12px;
     font-style: italic;
@@ -101,15 +109,35 @@ ul{
 }
 .bottom-container{
     background-color: #66BFBF;
-    padding: 50px;
+    padding: 50px 0 20px;
 }
 
 .copyright{
     color: #EAF6F6;
 }
+
+.profile a{
+    text-decoration: none;
+}
+
+.profile a:hover{
+    color: #40514E;
+}
+
 .bottom-container a{
-    color: #11999E;
-    padding: 20px;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.bottom-container a:hover{
+    color: #EAF6F6;
+}
+
+hr{
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
 }
 
 .btn {
@@ -127,14 +155,6 @@ ul{
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-}
-
-hr{
-    border-style: none;
-    border-top-style: dotted;
-    width: 5%;
-    border-width: 8px;
-    border-color: #EAF6F6;
 }
 
 .btn:hover {
