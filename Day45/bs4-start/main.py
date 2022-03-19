@@ -19,10 +19,18 @@ soup = BeautifulSoup(contents, "lxml")
 # print(soup.p)
 
 # find_all finds all the paragraphs
-all_anchor_tag = soup.find_all(name="p")
-# loops and prints the text in the tags
-for tag in all_anchor_tag:
-    print(tag.getText())
+# all_anchor_tag = soup.find_all(name="p")
+# # loops and prints the text in the tags
+# for tag in all_anchor_tag:
+#     print(tag.getText())
+
+# find_all finds all a tags
+# all_anchor_tag = soup.find_all(name="a")
+# loops and prints all the href in the anchor tag
+# for tag in all_anchor_tag:
+#     # the get function gets specific item in the tag
+#     print(tag.get("href"))
+
 
 
 
