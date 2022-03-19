@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import lxml
 
-with open("/Users/kham/document/udemy/python 100/100-Days-of-python/Day41-44/HTML-Personal Site/index.html") as file:
+with open("//Users/kham/document/udemy/python 100/100-Days-of-python/Day41-44/44/index.html") as file:
     contents = file.read()
 
 soup = BeautifulSoup(contents, "lxml")
@@ -31,7 +31,21 @@ soup = BeautifulSoup(contents, "lxml")
 #     # the get function gets specific item in the tag
 #     print(tag.get("href"))
 
+# getting specific item using find below finds h1 and id called name
+# heading = soup.find(name="h1", id="name")
+# print(heading)
 
+# section_p = soup.find(name="p", class_="intro")
+# print(section_p.getText())
+
+# select get all item that matches the prams
+# soup.select()
+# select_one will only get the first item it matches
+# soup.select_one()
+
+
+connect_link = soup.select(selector="div .footer-link ")
+print(connect_link)
 
 
 
