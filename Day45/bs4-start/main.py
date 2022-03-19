@@ -18,6 +18,12 @@ soup = BeautifulSoup(contents, "lxml")
 # prints the first paragraph
 # print(soup.p)
 
+# find_all finds all the paragraphs
+all_anchor_tag = soup.find_all(name="p")
+# loops and prints the text in the tags
+for tag in all_anchor_tag:
+    print(tag.getText())
+
 
 
 
