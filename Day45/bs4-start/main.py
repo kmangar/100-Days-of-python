@@ -1,10 +1,47 @@
 from bs4 import BeautifulSoup
 import lxml
+import requests
 
-with open("//Users/kham/document/udemy/python 100/100-Days-of-python/Day41-44/44/index.html") as file:
-    contents = file.read()
+response = requests.get("https://news.ycombinator.com/news")
+yc_web_page = response.text
 
-soup = BeautifulSoup(contents, "lxml")
+
+soup = BeautifulSoup(yc_web_page, "html.parser")
+
+# print(soup.title)
+
+articles = soup.findAll(name="a", class_="titlelink")
+# print(article_tag)
+article_title = []
+article_links = []
+
+for article_tag in articles:
+
+    text = article_tag.getText()
+    article_title.append(text)
+    link = article_tag.get("href")
+    article_links.append(link)
+    # print(article_link)
+
+article_upvotes = [int(score.getText().split(' ')[0]) for score in soup.findAll(name="span", class_="score")]
+
+print(article_title)
+print(article_links)
+print(article_upvotes)
+
+
+
+
+
+# section_a= soup.findAll(name="a", class_="titlelink")
+# for tag in section_a:
+#     print(tag.text)
+
+#
+# with open("//Users/kham/document/udemy/python 100/100-Days-of-python/Day41-44/44/index.html") as file:
+#     contents = file.read()
+#
+# soup = BeautifulSoup(contents, "lxml")
 
 # prints the title
 # print(soup.title)
@@ -44,8 +81,8 @@ soup = BeautifulSoup(contents, "lxml")
 # soup.select_one()
 
 
-connect_link = soup.select(selector="div .footer-link ")
-print(connect_link)
+# connect_link = soup.select(selector="div .footer-link ")
+# print(connect_link)
 
 
 
