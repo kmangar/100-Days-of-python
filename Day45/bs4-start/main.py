@@ -25,12 +25,13 @@ for article_tag in articles:
 
 article_upvotes = [int(score.getText().split(' ')[0]) for score in soup.findAll(name="span", class_="score")]
 
-print(article_title)
-print(article_links)
-print(article_upvotes)
+# print(article_title)
+# print(article_links)
+# print(article_upvotes)
 
+index = article_upvotes.index((max(article_upvotes)))
 
-
+print(f"{article_title[index]}\n{article_links[index]}\n{article_upvotes[4]} upvotes")
 
 
 # section_a= soup.findAll(name="a", class_="titlelink")
