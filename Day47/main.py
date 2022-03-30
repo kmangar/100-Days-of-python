@@ -1,3 +1,5 @@
+import smtplib
+
 from bs4 import BeautifulSoup
 import requests
 import lxml
@@ -15,8 +17,10 @@ website = response.text
 soup = BeautifulSoup(website, "lxml")
 price = soup.find(name="span", class_="a-offscreen").get_text()
 
+float_price = price.split('$')[1]
 
-print(f"${price}")
+smtplib.SMTP("smtp.gmail.com", port=587)
+
 
 
 
