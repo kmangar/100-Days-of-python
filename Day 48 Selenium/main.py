@@ -1,11 +1,11 @@
 from selenium import webdriver
 
 
-chrome_driver_path = "P:\Program\webdriver\chromedriver.exe"
+chrome_driver_path = "chromedriver.exe"
 
 driver = webdriver.Chrome(chrome_driver_path)
 
-driver.get("https://www.google.com")
+driver.get("https://www.python.org")
 
 # close will only close the current tab
 # driver.close()
@@ -28,3 +28,20 @@ driver.get("https://www.google.com")
 
 # find by xpath 
 # bug_link = driver.find_element_by_xpath('//*[@id="question-dialog"]/a/span')
+
+event_time = driver.find_elements_by_css_selector(".event-widget time")
+event_names = driver.find_elements_by_css_selector(".event-widget li a")
+events = {}
+
+
+for n in range(len(event_time)):
+    events[n] = {
+        "time": event_time[n].text,
+        "name": event_names[n].text
+    }
+
+print(events)
+
+driver.quit()
+
+
