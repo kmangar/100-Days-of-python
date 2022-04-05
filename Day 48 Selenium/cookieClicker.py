@@ -54,3 +54,5 @@ while True:
             By.ID, "cps").text
         print(speed)
         break
+
+driver.quit()
