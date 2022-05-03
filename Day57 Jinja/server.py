@@ -18,12 +18,10 @@ def guess(name):
     url = f"https://api.genderize.io?name={name}"
     response = requests.get(url)
     gender_data = response.json()
-    gender = gender_data["gender"]
     url = f"https://api.agify.io?name={name}"
     response = requests.get(url)
     agify = response.json()
-    age = agify["age"]
-    return render_template("guesser.html", u_name=name, u_gender=gender, u_age=age)
+    return render_template("guesser.html", u_name=name, u_gender=gender_data["gender"], u_age=agify["age"])
 
 
 
