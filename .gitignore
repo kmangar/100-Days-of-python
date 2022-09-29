@@ -474,6 +474,6 @@ pip-selfcheck.json
 *.xml
 *.iml
 *.xml
-Day29/data.json
+Day29 PasswordGenerator/data.json
 .DS_Store
 .DS_Store
