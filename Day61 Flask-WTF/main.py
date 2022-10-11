@@ -2,11 +2,13 @@ from flask import Flask, render_template, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Email, Length
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 
 app.secret_key = "some secret string"
 
+Bootstrap(app)
 
 class LoginForm(FlaskForm):
     email = StringField(label='Email', validators=[DataRequired(), Email(message="invalid Email")])
@@ -27,7 +29,6 @@ def login():
             return render_template("success.html")
         else:
             return render_template("denied.html")
-    return render_template("login.html", form=login_form)
     return render_template("login.html", form=login_form)
 
 
