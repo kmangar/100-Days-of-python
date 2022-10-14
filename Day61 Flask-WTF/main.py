@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, redirect
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Email, Length
@@ -16,12 +16,12 @@ class LoginForm(FlaskForm):
     submit = SubmitField(label='Log in')
 
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def home():
     return render_template('index.html')
 
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
