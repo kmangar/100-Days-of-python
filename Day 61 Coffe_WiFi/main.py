@@ -1,8 +1,8 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms import StringField, SubmitField, SelectField
+from wtforms.validators import DataRequired, URL
 import csv
 
 app = Flask(__name__)
@@ -12,6 +12,16 @@ Bootstrap(app)
 
 class CafeForm(FlaskForm):
     cafe = StringField('Cafe name', validators=[DataRequired()])
+    location = StringField('Cafe Location on Google Maps(URL)', validators=[DataRequired(), URL()])
+    open_time = StringField('Opening Time e.g. 8AM', validators=[DataRequired()])
+    close_time = StringField('Close e.g. 5PM', validators=[DataRequired()])
+    coffee = SelectField(u'Coffee Rating',
+                         choices=[('☕'), ('☕', '☕'), ('☕', '☕', '☕'), ('☕', '☕', '☕', '☕'), ('☕', '☕', '☕', '☕', '☕')])
+    wifi = SelectField(u'Wifi Strength Rating',
+                       choices=[('💪'), ('💪', '💪'), ('💪', '💪', '💪'), ('💪', '💪', '💪', '💪'), ('💪', '💪', '💪', '💪', '💪')])
+    power = SelectField(u'Power Socket Availability',
+                        choices=[('🔌'), ('🔌', '🔌'), ('🔌', '🔌', '🔌'), ('🔌', '🔌', '🔌', '🔌', '🔌'),
+                                 ('🔌', '🔌', '🔌', '🔌', '🔌')])
     submit = SubmitField('Submit')
 
 
@@ -43,7 +53,7 @@ def add_cafe():
 
 @app.route('/cafes')
 def cafes():
-    with open('cafe-data.csv', newline='') as csv_file:
+    with open('cafe-data.csv', encoding="utf8", newline='') as csv_file:
         csv_data = csv.reader(csv_file, delimiter=',')
         list_of_rows = []
         for row in csv_data:
