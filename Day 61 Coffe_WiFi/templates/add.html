@@ -1,4 +1,5 @@
 {% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}Add A New Cafe{% endblock %}
 {% block styles %}
@@ -11,14 +12,28 @@
     <div class="row">
         <div class="col-sm-12 col-md-8">
 
-            <h1>Add a new cafe into the database</h1>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Add a new cafe into the database</h1>
 
-            <!-- This is where your WTForm will go -->
-
-            <p class="space-above"><a href={{ url_for('cafes') }}>See all cafes</a></p>
+                </div>
+                <div class="card-body">
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
 
         </div>
     </div>
+
+
+    <!-- This is where your WTForm will go -->
+
+    <div class="text-center">
+        <a class="btn btn-default" href={{ url_for('home') }}>Home</a>
+        <a class="btn btn-default space-above" href={{ url_for('cafes') }}>See all cafes</a>
+    </div>
+
 </div>
+
 
 {% endblock %}
