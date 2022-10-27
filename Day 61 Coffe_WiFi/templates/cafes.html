@@ -31,13 +31,12 @@
                 </tr>
                 </thead>
 
-                {# {% for table_head in cafes[0]: %}#}
 
                 <tbody>
                 {% for cafe in cafes[1:] %}
                 <tr>
                     <th>{{ cafe.pop(0) }}</th>
-                    <th><a href="{{  cafe.pop(0) }}">Map Link</a></th>
+                    <th><a href="{{cafe.pop(0)}}">Map Link</a></th>
                     <th>{{ cafe.pop(0) }}</th>
                     <th>{{ cafe.pop(0) }}</th>
                     <th>{{ cafe.pop(0) }}</th>
