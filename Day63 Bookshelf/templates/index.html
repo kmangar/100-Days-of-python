@@ -6,10 +6,18 @@
 </head>
 <body>
 <h1>My Library</h1>
-    <ul>
-        <li></li>
-    </ul>
-    
+
+{% block content %}
+    {% if len(books)==0 %}
+        <p>Library is empty</p>
+
+    {% else %}
+        {% for book in books %}
+            <li>{{book.title}} - {{book.author}} - {{book.rating}}/10</li>
+        {% endfor %}
+    {% endif %}
+{% endblock content %}
+
 <a href={{ url_for('add') }}>Add New Book</a>
 </body>
 </html>
