@@ -21,20 +21,22 @@ class BookForm(FlaskForm):
     
     submit = SubmitField('Submit')
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('index.html')
+
+    return render_template('index.html', books=all_books, len=len)
 
 
 @app.route("/add", methods=["GET", "POST"])
 def add():
     form = BookForm()
-    if form.validate_on_submit():
-        new_data = form.data
-        new_row = [value for (key, value) in new_data.items() if not key in ['submit', 'csrf_token']]
-        
-        return redirect(url_for('cafes'))
-
+    if request.method == "POST":
+        new_book = {
+            "title": request.form["title"],
+            "author": request.form["author"],
+            "rating": request.form["rating"]
+        }
+        all_books.append(new_book)
     # Exercise:
     # Make the form write a new row into cafe-data.csv
     # with   if form.validate_on_submit()
