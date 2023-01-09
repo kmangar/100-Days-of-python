@@ -65,6 +65,17 @@ def edit():
     book_selected = Book.query.get(book_id)
     return render_template("edit.html", book=book_selected)
 
+@app.route('/delete')
+def delete():
+
+    # UPDATE RECORD
+    book_id = request.args.get('id')
+    book_to_update = Book.query.get(book_id)
+    dab.session.delete(book_to_update)
+    dab.session.commit()
+
+    return redirect(url_for('home'))
+
 
 if __name__ == "__main__":
     app.run(debug=True)
