@@ -14,7 +14,7 @@ Miles_text.grid(column=2, row=0)
 is_equal = Label(text="is equal to")
 
 is_equal.grid(column=0, row=1)
-km_text = Label(text="is equal to")
+km_text = Label(text="KM")
 
 km_text.grid(column=2, row=1)
 km_output = Label(text="0")
