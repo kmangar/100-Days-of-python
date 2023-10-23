@@ -5,7 +5,7 @@ import time
 
 PROMISED_DOWN = 200
 PROMISED_UP = 10
-CHROME_DRIVER_PATH = "../Day 48 Selenium/chromedriver.exe"
+CHROME_DRIVER_PATH = "../Day48 Selenium/chromedriver.exe"
 # email/ username / phone
 TWITTER_EMAIL = "email"
 TWITTER_PASSWORD = "password"

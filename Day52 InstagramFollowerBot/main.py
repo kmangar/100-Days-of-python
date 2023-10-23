@@ -5,7 +5,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-CHROME_DRIVER_PATH = "../Day 48 Selenium/chromedriver.exe"
+CHROME_DRIVER_PATH = "../Day48 Selenium/chromedriver.exe"
 
 SIMILAR_ACCT = input("similar account to look up: ")
 USERNAME = input("Enter your username: ")
