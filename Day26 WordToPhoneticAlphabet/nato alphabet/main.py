@@ -35,7 +35,7 @@ nato_alphabet_dict = {row.letter:row.code for (index, row) in nato_alphabet.iter
 def generate_phonetic():
     word = input("Enter A word: ").upper()
     try:
-        # using the dictionary get the phonetic at the letter and stor it in a list
+        # using the dictionary get the phonetic at the letter and store it in a list
         output_list = [nato_alphabet_dict[letter] for letter in word]
     except KeyError:
         print("Sorry, only letters in the alphabet please")
@@ -43,6 +43,13 @@ def generate_phonetic():
     else:
         # print the list
         print(output_list)
+        # check if user has another word
+        agian = input("Do you have another word? 'y' or 'n': ")
+        # If user has another word  re-run generate_phonetic()
+        if agian == 'y':
+            generate_phonetic()
+        else:
+            exit(0)
 
 generate_phonetic()
 
