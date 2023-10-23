@@ -16,7 +16,11 @@ class QuizBrain():
         self.check_answer(user_answer, current_question.answer)
 
     def check_answer(self, user_answer, correct_answer):
-        if user_answer.lower() == correct_answer.lower():
+        ## if the answer is the same answer is correct.
+        ## answer is correct if they only put the first letter
+        if user_answer.lower() == correct_answer.lower() or \
+                user_answer.lower().split('a')[0] == correct_answer.lower().split('a')[0] or \
+                user_answer.lower().split('r')[0] == correct_answer.lower().split('r')[0]:
             self.score += 1
             print("You got it right!")
         else:
